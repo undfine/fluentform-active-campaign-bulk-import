@@ -1,0 +1,184 @@
+/* 
+Example data returned on submission 
+*/
+
+// Parsed Repeater
+
+Array
+(
+    [0] => Array
+        (
+            [first_name] => First
+            [last_name] => Last
+            [email] => email1@test.com
+        )
+
+    [1] => Array
+        (
+            [first_name] => First2
+            [last_name] => Last2
+            [email] => email2@test.com
+        )
+
+)
+
+
+// Form Data
+Array
+(
+    [__fluent_form_embded_post_id] => 4678
+    [_fluentform_12_fluentformnonce] => ab07aebd5f
+    [_wp_http_referer] => /?fluent_forms_pages=1&design_mode=1&preview_id=12
+    [full_name] => Array
+        (
+            [first_1_3] => John
+            [middle_1_4] => 
+            [last_1_6] => Smith
+        )
+
+    [email_3] => johnsmith@testing.com
+    [extra_participants] => Array
+        (
+            [0] => yes
+        )
+
+    [participant_repeater] => Array
+        (
+            [0] => Array
+                (
+                    [0] => First
+                    [1] => Last
+                    [2] => email1@testing.com
+                )
+
+            [1] => Array
+                (
+                    [0] => First2
+                    [1] => Last2
+                    [2] => email2@testing.com
+                )
+
+        )
+
+)
+
+
+// Feed Settings
+Array
+(
+    [name] => ActiveCampaignBulk Integration Feed
+    [list_id] => 1
+    [repeater_field] => {inputs.participant_repeater}
+    [repeater_field_columns] => Array
+        (
+            [0] => Array
+                (
+                    [item_value] => 1
+                    [label] => first_name
+                )
+
+            [1] => Array
+                (
+                    [item_value] => 2
+                    [label] => last_name
+                )
+
+            [2] => Array
+                (
+                    [item_value] => 3
+                    [label] => email
+                )
+
+        )
+
+    [custom_field_mappings] => Array
+        (
+            [0] => Array
+                (
+                    [item_value] => Primary Contact: {inputs.full_name} <{inputs.email_3}>
+                    [label] => 3
+                )
+
+        )
+
+    [note] => 
+    [tags] => Prebooking, Additional Participant
+    [tag_routers] => Array
+        (
+        )
+
+    [tag_ids_selection_type] => simple
+    [conditionals] => Array
+        (
+            [conditions] => Array
+                (
+                    [0] => Array
+                        (
+                            [field] => 
+                            [operator] => =
+                            [value] => 
+                        )
+
+                )
+
+            [status] => 
+            [type] => all
+        )
+
+    [instant_responders] => 
+    [last_broadcast_campaign] => 
+    [enabled] => 1
+    [status] => 1
+)
+
+// Feed Processed Values
+Array
+(
+    [name] => ActiveCampaignBulk Integration Feed
+    [list_id] => 1
+    [repeater_field] => First, Last, email1@a.com, First2, Last2, email2@a.com
+    [repeater_field_columns] => Array
+        (
+            [0] => Array
+                (
+                    [item_value] => 1
+                    [label] => first_name
+                )
+
+            [1] => Array
+                (
+                    [item_value] => 2
+                    [label] => last_name
+                )
+
+            [2] => Array
+                (
+                    [item_value] => 3
+                    [label] => email
+                )
+
+        )
+
+    [custom_field_mappings] => Array
+        (
+            [0] => Array
+                (
+                    [item_value] => Primary Contact: John Smith 
+                    [label] => 3
+                )
+
+        )
+
+    [note] => 
+    [tags] => Additional Participant
+    [tag_routers] => Array
+        (
+        )
+
+    [tag_ids_selection_type] => simple
+    [instant_responders] => 
+    [last_broadcast_campaign] => 
+    [enabled] => 1
+    [status] => 1
+)
+
