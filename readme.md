@@ -1,5 +1,5 @@
 === Fluent Forms Bulk Importer for Active Campaign ===
-Contributors: undine
+Contributors: undfine
 Tags: fluent forms, fluent forms pro, fluent forms pro integration, active campaign, repeater field
 Requires at least: 6.1
 Tested up to: 6.1
