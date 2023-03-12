@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Fluentform Active Campaign Bulk Importer
- * Description: Used to import mulitple contacts on a single form submission
+ * Description: Used to import multiple contacts on a single form submission
  * Version:     1.2.0
  * Author:      Dustin Wight
  * Author URI:  https://dustinwight.com/

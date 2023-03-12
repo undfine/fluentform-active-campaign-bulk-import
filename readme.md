@@ -21,4 +21,4 @@ Enable ActiveCampaign Integration and connect your API key
 
 = Integration Instructions =
 Select a repeater field
-Add columns to match your repeater field and select the cooresponding ActiveCampaign field
+Add columns to match your repeater field and select the corresponding ActiveCampaign field
